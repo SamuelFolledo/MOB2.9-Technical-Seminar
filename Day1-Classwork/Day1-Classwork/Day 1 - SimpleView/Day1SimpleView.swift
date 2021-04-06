@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Day1SimpleView.swift
 //  Day1-Classwork
 //
 //  Created by Samuel Folledo on 3/30/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Day1SimpleView: View {
     
     @State var isLoggedIn = false
     
@@ -39,9 +39,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Day1SimpleView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Day1SimpleView()
             .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
             .previewDisplayName("User Preview iPhone 8")
         
