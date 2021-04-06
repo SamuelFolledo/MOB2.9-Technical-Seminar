@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5430623F261D19B6006CA858 /* Day2TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430623E261D19B6006CA858 /* Day2TabView.swift */; };
 		544E4898261D15A2003245D2 /* Day2ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544E4897261D15A2003245D2 /* Day2ListView.swift */; };
 		547B2E422613E11E00635B6A /* Day1_ClassworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B2E412613E11E00635B6A /* Day1_ClassworkApp.swift */; };
 		547B2E442613E11E00635B6A /* Day1SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B2E432613E11E00635B6A /* Day1SimpleView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5430623E261D19B6006CA858 /* Day2TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2TabView.swift; sourceTree = "<group>"; };
 		544E4897261D15A2003245D2 /* Day2ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2ListView.swift; sourceTree = "<group>"; };
 		547B2E3E2613E11E00635B6A /* Day1-Classwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day1-Classwork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		547B2E412613E11E00635B6A /* Day1_ClassworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1_ClassworkApp.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54306241261D19BD006CA858 /* Day 2 - TabView */ = {
+			isa = PBXGroup;
+			children = (
+				5430623E261D19B6006CA858 /* Day2TabView.swift */,
+			);
+			path = "Day 2 - TabView";
+			sourceTree = "<group>";
+		};
 		544E4895261D1590003245D2 /* Day 1 - SimpleView */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 				547B2E412613E11E00635B6A /* Day1_ClassworkApp.swift */,
 				544E4895261D1590003245D2 /* Day 1 - SimpleView */,
 				544E489C261D1615003245D2 /* Day 2 - ListView */,
+				54306241261D19BD006CA858 /* Day 2 - TabView */,
 				547B2E452613E12100635B6A /* Assets.xcassets */,
 				547B2E4A2613E12100635B6A /* Info.plist */,
 				547B2E472613E12100635B6A /* Preview Content */,
@@ -159,6 +170,7 @@
 			files = (
 				544E4898261D15A2003245D2 /* Day2ListView.swift in Sources */,
 				547B2E442613E11E00635B6A /* Day1SimpleView.swift in Sources */,
+				5430623F261D19B6006CA858 /* Day2TabView.swift in Sources */,
 				547B2E422613E11E00635B6A /* Day1_ClassworkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

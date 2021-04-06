@@ -26,7 +26,6 @@ struct Day2ListView: View {
                         WeekSection(name: "Work days", days:[WeekDay(name: "Monday"), WeekDay(name: "Tuesday"), WeekDay(name: "Wednesday")]),
                         WeekSection(name: "Weekend days", days:[WeekDay(name: "Friday"), WeekDay(name: "Saturday"), WeekDay(name: "Sunday")])
     ]
-
     
     var body: some View {
         NavigationView{
