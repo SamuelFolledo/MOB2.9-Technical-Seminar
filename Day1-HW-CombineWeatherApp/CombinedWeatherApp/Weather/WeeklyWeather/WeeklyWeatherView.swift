@@ -72,7 +72,7 @@ private extension WeeklyWeatherView {
 
   var cityHourlyWeatherSection: some View {
     Section {
-      NavigationLink(destination: CurrentWeatherView()) {
+      NavigationLink(destination: viewModel.currentWeatherView) {
         VStack(alignment: .leading) {
           // 3 You can still use and access the WeeklyWeatherViewModel properties without any fancy binds. This just displays the city name in a Text.
           Text(viewModel.city)
