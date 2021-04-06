@@ -22,7 +22,6 @@ struct WeekDay: Identifiable {
 
 struct Day2ListView: View {
     
-//    let days = [WeekDay(name: "Friday"), WeekDay(name: "Saturday"), WeekDay(name: "Sunday")]
     let weekSections = [
                         WeekSection(name: "Work days", days:[WeekDay(name: "Monday"), WeekDay(name: "Tuesday"), WeekDay(name: "Wednesday")]),
                         WeekSection(name: "Weekend days", days:[WeekDay(name: "Friday"), WeekDay(name: "Saturday"), WeekDay(name: "Sunday")])
@@ -31,13 +30,17 @@ struct Day2ListView: View {
     
     var body: some View {
         NavigationView{
-              List {
-                ForEach(weekSections){ dayName in
-                    Text(dayName.name)
+            List {
+                ForEach(weekSections){ week in
+                    Section(header: Text(week.name)) {
+                        ForEach(week.days) { day in
+                            Text(day.name)
+                        }
+                    }
                 }
-              }
-              .navigationTitle("Weekend")
             }
+            .navigationTitle("Weekend")
+        }
     }
 }
 
@@ -46,9 +49,5 @@ struct Day2ListView_Previews: PreviewProvider {
         Day2ListView()
             .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
             .previewDisplayName("User Preview iPhone 8")
-        
-//        ContentView()
-//                    .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
-//                    .previewDisplayName("Client Preview on iPhone 12 Pro Max")
     }
 }
