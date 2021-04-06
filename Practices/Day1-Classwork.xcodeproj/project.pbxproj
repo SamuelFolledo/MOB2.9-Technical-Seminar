@@ -43,6 +43,14 @@
 			path = "Day 1 - SimpleView";
 			sourceTree = "<group>";
 		};
+		544E489C261D1615003245D2 /* Day 2 - ListView */ = {
+			isa = PBXGroup;
+			children = (
+				544E4897261D15A2003245D2 /* Day2ListView.swift */,
+			);
+			path = "Day 2 - ListView";
+			sourceTree = "<group>";
+		};
 		547B2E352613E11D00635B6A = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				547B2E412613E11E00635B6A /* Day1_ClassworkApp.swift */,
-				544E4897261D15A2003245D2 /* Day2ListView.swift */,
 				544E4895261D1590003245D2 /* Day 1 - SimpleView */,
+				544E489C261D1615003245D2 /* Day 2 - ListView */,
 				547B2E452613E12100635B6A /* Assets.xcassets */,
 				547B2E4A2613E12100635B6A /* Info.plist */,
 				547B2E472613E12100635B6A /* Preview Content */,
