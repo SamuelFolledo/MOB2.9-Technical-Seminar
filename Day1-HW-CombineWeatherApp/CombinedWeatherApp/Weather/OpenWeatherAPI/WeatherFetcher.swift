@@ -122,7 +122,7 @@ extension WeatherFetcher: WeatherFetchable {
       .mapError { error in
         WeatherError.network(description: error.localizedDescription)
       }
-      // 4 Here, you use it to convert the data coming from the server as JSON to a fully-fledged object. You use decode(_:) as an auxiliary function to achieve this. Since you are only interested in the first value emitted by the network request, you set .max(1).
+      // 4 Here, you use it to convert the data coming from the server as JSON to a fully-fledged object. You use decode(_:) as an auxiliary function to achieve this. Since you are only interested in the first value emitted by the network request, you set .max(1). //returns the data after it has been decoded. Use .max(1) to get the first emitted value
       .flatMap(maxPublishers: .max(1)) { pair in
         decode(pair.data)
       }

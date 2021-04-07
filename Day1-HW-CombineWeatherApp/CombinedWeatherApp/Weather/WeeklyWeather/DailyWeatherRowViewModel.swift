@@ -49,7 +49,8 @@ struct DailyWeatherRowViewModel: Identifiable {
   }
   
   var title: String {
-    guard let title = item.weather.first?.main.rawValue else { return "" }
+//    guard let title = item.weather.first?.main.rawValue else { return "" }
+    guard let title = item.weather.first?.main else { return "" }
     return title
   }
   

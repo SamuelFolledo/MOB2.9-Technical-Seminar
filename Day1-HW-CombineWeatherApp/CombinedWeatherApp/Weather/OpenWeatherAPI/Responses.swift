@@ -48,7 +48,7 @@ struct WeeklyForecastResponse: Codable {
   }
   
   struct Weather: Codable {
-    let main: MainEnum
+    let main: String
     let weatherDescription: String
     
     enum CodingKeys: String, CodingKey {
@@ -57,11 +57,11 @@ struct WeeklyForecastResponse: Codable {
     }
   }
   
-  enum MainEnum: String, Codable {
-    case clear = "Clear"
-    case clouds = "Clouds"
-    case rain = "Rain"
-  }
+//  enum MainEnum: String, Codable {
+//    case clear = "Clear"
+//    case clouds = "Clouds"
+//    case rain = "Rain"
+//  }
 }
 
 struct CurrentWeatherForecastResponse: Decodable {
